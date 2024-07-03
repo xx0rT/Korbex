@@ -30,12 +30,23 @@
             <li><a href="#home">Domov</a></li>
             <li><a href="#about">Kdo jsme</a></li>
             <li><a href="#services">Služby</a></li>
+            <li><a href="/product.html">Produkty</a></li>
             <li><a href="#pricing">Ceník</a></li>
             <li><a href="#team">Náš Tým</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
       </div>
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+              </script>
+              <script type="text/javascript">
+                (function(){
+                    emailjs.init({
+                      publicKey: "ep4QkVKDa-6k0F14V",
+                    });
+                })();
+              </script>
     </header>
 
     <section class="home" id="home">
@@ -53,7 +64,7 @@
               <div class="circle"></div>
             </div>
             <script type="module" data-aos="fade-left" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/PBQQBw8bfXDhBo7w/scene.splinecode" events-target="local"></spline-viewer>
+          <spline-viewer url="https://prod.spline.design/PBQQBw8bfXDhBo7w/scene.splinecode" events-target="local"></spline-viewer>
           </div>
         </div>
       </div>
@@ -242,19 +253,19 @@
           <div class="contact-form" data-aos="fade-up" data-aos-duration="600">
             <form action="">
               <div class="input-box">
-                <input type="text" placeholder="Jméno" class="input-control" required>
+                <input id="name" type="text" placeholder="Jméno" class="input-control" required>
               </div>
               <div class="input-box">
-                <input type="email" placeholder="Email" class="input-control" required>
+                <input type="email" id="email" placeholder="Email" class="input-control" required>
               </div>
               <div class="input-box">
-                <input type="number" placeholder="Telefon" class="input-control" required>
+                <input type="number" id="phone" placeholder="Telefon" class="input-control" required>
               </div>
               <div class="input-box">
-                <textarea placeholder="Zpráva" id="" cols="30" rows="10" class="input-control" required></textarea>
+                <input placeholder="Zpráva" id="message" cols="30" rows="10" class="input-control" required></input>
               </div>
               <div class="btn-wrap" data-aos="fade-up" data-aos-duration="600">
-                <button type="submit" class="btn">Poslat zprávu</button>
+                <button onclick="sendMail()" class="btn">Poslat zprávu</button>
               </div>
             </form>
           </div>
@@ -300,7 +311,7 @@
 
 <script src="js/aos.js"></script>
 <script src="js/main.js"></script>
-  <script src="js/smtp.js"></script>
+  <script src="js/smpt.js"></script>
 <script src="js/style-switcher.js"></script>
 </body>
 </html>

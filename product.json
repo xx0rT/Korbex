@@ -1,0 +1,386 @@
+[
+    {
+        "id": 1,
+        "name": "Axolot - Fialový",
+        "price": 399,
+        "image": "product-img/axlik fialovy.webp"
+    },
+    {
+        "id": 2,
+        "name": "Axolot - Zelený",
+        "price": 419,
+        "image": "product-img/axlik green.webp"
+    },
+    {
+        "id": 3,
+        "name": "Axolot - Oranžový",
+        "price": 409,
+        "image": "product-img/axlik orange.webp"
+    },
+    {
+        "id": 4,
+        "name": "Axolot - Červený",
+        "price": 429,
+        "image": "product-img/axlik white and red.webp"
+    },
+    {
+        "id": 5,
+        "name": "Axolot - Zlatý",
+        "price": 419,
+        "image": "product-img/axlik zlto fialovy.webp"
+    },
+    {
+        "id": 6,
+        "name": "Axolot - Modrý",
+        "price": 399,
+        "image": "product-img/axlik-blue.webp"
+    },
+    {
+        "id": 7,
+        "name": "Držák na víno - Medvěd",
+        "price": 449,
+        "image": "product-img/bear wine holder.webp"
+    },
+    {
+        "id": 8,
+        "name": "Socha Big Ben",
+        "price": 399,
+        "image": "product-img/big ben socha.webp"
+    },
+    {
+        "id": 9,
+        "name": "Držák na kávové kapsle",
+        "price": 849,
+        "image": "product-img/Caffeinated_Squirrel.webp"
+    },
+    {
+        "id": 10,
+        "name": "Box na šperky",
+        "price": 399,
+        "image": "product-img/Carved_Jewelry_Box.webp"
+    },
+    {
+        "id": 11,
+        "name": "Držák na sluchátka",
+        "price": 1599,
+        "image": "product-img/chobka controler holder.webp"
+    },
+    {
+        "id": 12,
+        "name": "Držák na ovladač - voják",
+        "price": 689,
+        "image": "product-img/controler holder .webp"
+    },
+    {
+        "id": 13,
+        "name": "Držák na ovladač - Rytíř",
+        "price": 729,
+        "image": "product-img/controler holder knight.webp"
+    },
+    {
+        "id": 14,
+        "name": "Dichotromy socha",
+        "price": 719,
+        "image": "product-img/Dichotomy socha.webp"
+    },
+    {
+        "id": 15,
+        "name": "Brontosaur",
+        "price": 299,
+        "image": "product-img/dino biely.webp"
+    },
+    {
+        "id": 16,
+        "name": "T-Rex",
+        "price": 329,
+        "image": "product-img/dino hnedy.webp"
+    },
+    {
+        "id": 17,
+        "name": "Triceratops",
+        "price": 359,
+        "image": "product-img/dino orange.webp"
+    },
+    {
+        "id": 18,
+        "name": "Velociraptor",
+        "price": 339,
+        "image": "product-img/dino šeda.webp"
+    },
+    {
+        "id": 19,
+        "name": "Stegosaurus",
+        "price": 369,
+        "image": "product-img/dino zelena.webp"
+    },
+    {
+        "id": 20,
+        "name": "Parasaurolophus",
+        "price": 349,
+        "image": "product-img/Dino zlty.webp"
+    },
+    {
+        "id": 21,
+        "name": "Držák na víno - Žába",
+        "price": 459,
+        "image": "product-img/frog wine holder 2.webp"
+    },
+    {
+        "id": 22,
+        "name": "Držák na víno - Žába 2",
+        "price": 379,
+        "image": "product-img/frog wine holder.webp"
+    },
+    {
+        "id": 23,
+        "name": "Držák na nože - Klaun",
+        "price": 969,
+        "image": "product-img/knife holder 2.webp"
+    },
+    {
+        "id": 24,
+        "name": "Držák na nože - Kraken",
+        "price": 1999,
+        "image": "product-img/knife holder.webp"
+    },
+    {
+        "id": 25,
+        "name": "Koloseum",
+        "price": 599,
+        "image": "product-img/koloseo socha.webp"
+    },
+    {
+        "id": 26,
+        "name": "Držák na ovladač - Lebky",
+        "price": 549,
+        "image": "product-img/lebky controler holder.webp"
+    },
+    {
+        "id": 27,
+        "name": "Mermaid socha",
+        "price": 699,
+        "image": "product-img/mermaid zelena.webp"
+    },
+    {
+        "id": 28,
+        "name": "Mermaid socha 2",
+        "price": 559,
+        "image": "product-img/mermaid.webp"
+    },
+    {
+        "id": 29,
+        "name": "Držák na víno - Chobotnice Merlo",
+        "price": 1199,
+        "image": "product-img/octopus wine holder.webp"
+    },
+    {
+        "id": 30,
+        "name": "Držák na víno - Panda",
+        "price": 659,
+        "image": "product-img/panda wine holder.webp"
+    },
+    {
+        "id": 31,
+        "name": "Držák na papírové utěrky",
+        "price": 459,
+        "image": "product-img/paper holder.webp"
+    },
+    {
+        "id": 32,
+        "name": "Držák na telefon",
+        "price": 559,
+        "image": "product-img/phone holder.webp"
+    },
+    {
+        "id": 33,
+        "name": "Držák na fotky",
+        "price": 199,
+        "image": "product-img/photo holder mom.webp"
+    },
+    {
+        "id": 34,
+        "name": "Ozdoba do akvária",
+        "price": 699,
+        "image": "product-img/photo holder.webp"
+    },
+    {
+        "id": 35,
+        "name": "Kasička na mince",
+        "price": 699,
+        "image": "product-img/piggy bank 2.webp"
+    },
+    {
+        "id": 36,
+        "name": "Kasička na mince 2",
+        "price": 699,
+        "image": "product-img/piggy bank 3.webp"
+    },
+    {
+        "id": 37,
+        "name": "Kasička na mince 3",
+        "price": 699,
+        "image": "product-img/piggy bank 4.webp"
+    },
+    {
+        "id": 38,
+        "name": "Kasička na mince 4",
+        "price": 699,
+        "image": "product-img/piggy bank 4.webp"
+    },
+    {
+        "id": 39,
+        "name": "Kasička na mince 5",
+        "price": 399,
+        "image": "product-img/piggy bank.webp"
+    },
+    {
+        "id": 40,
+        "name": "Ozdoba do akvária - Pirát",
+        "price": 699,
+        "image": "product-img/pirat.webp"
+    },
+    {
+        "id": 41,
+        "name": "Box s kočkou",
+        "price": 399,
+        "image": "product-img/Planter box.webp"
+    },
+    {
+        "id": 42,
+        "name": "Držák na víno - Červená Panda",
+        "price": 589,
+        "image": "product-img/red panda wine holder.webp"
+    },
+    {
+        "id": 43,
+        "name": "Sada na pískové hřiště",
+        "price": 1499,
+        "image": "product-img/sandcastle 2.webp"
+    },
+    {
+        "id": 44,
+        "name": "Amor Socha",
+        "price": 589,
+        "image": "product-img/socha amor.webp"
+    },
+    {
+        "id": 45,
+        "name": "Brooklyn Most",
+        "price": 799,
+        "image": "product-img/socha brooklyn bridge.webp"
+    },
+    {
+        "id": 46,
+        "name": "Eifellova Věž",
+        "price": 339,
+        "image": "product-img/socha eiffel.webp"
+    },
+    {
+        "id": 47,
+        "name": "Socha matky a dítěte",
+        "price": 249,
+        "image": "product-img/Socha matky a dietata.webp"
+    },
+    {
+        "id": 48,
+        "name": "Rámeček na fotku ultrazvuku",
+        "price": 499,
+        "image": "product-img/socha matky.webp"
+    },
+    {
+        "id": 49,
+        "name": "Sydney Opera",
+        "price": 599,
+        "image": "product-img/socha sydney opera.webp"
+    },
+    {
+        "id": 50,
+        "name": "Taj mahal",
+        "price": 599,
+        "image": "product-img/sochaa tajmahal.webp"
+    },
+    {
+        "id": 51,
+        "name": "Ozdoba do akvária - Potapěč",
+        "price": 639,
+        "image": "product-img/tazitko.webp"
+    },
+    {
+        "id": 52,
+        "name": "Držák na papírové utěrky 2",
+        "price": 399,
+        "image": "product-img/towel holder.webp"
+    },
+    {
+        "id": 53,
+        "name": "Ozdoba do akvária - Mušle",
+        "price": 349,
+        "image": "product-img/vaza mušla.webp"
+    },
+    {
+        "id": 54,
+        "name": "Květináč",
+        "price": 589,
+        "image": "product-img/vaza muz.webp"
+    },
+    {
+        "id": 55,
+        "name": "Květináč - Sloup",
+        "price": 419,
+        "image": "product-img/vaza ruin.webp"
+    },
+    {
+        "id": 56,
+        "name": "Květináč - Srdce",
+        "price": 459,
+        "image": "product-img/vaza srdce.webp"
+    },
+    {
+        "id": 57,
+        "name": "Ozdoba do akvária - Korál",
+        "price": 429,
+        "image": "product-img/vaza tyrkys.webp"
+    },
+    {
+        "id": 58,
+        "name": "Květináč - Váza",
+        "price": 489,
+        "image": "product-img/vaza vaza.webp"
+    },
+    {
+        "id": 59,
+        "name": "Květináč - Žena",
+        "price": 499,
+        "image": "product-img/vaza zadek.webp"
+    },
+    {
+        "id": 60,
+        "name": "Šachovnicová sada",
+        "price": 1499,
+        "image": "product-img/Viking_Chess_Board.webp"
+    },
+    {
+        "id": 61,
+        "name": "Držák na víno - Chobotnice",
+        "price": 599,
+        "image": "product-img/wine holder 2.webp"
+    },
+    {
+        "id": 62,
+        "name": "Držák na víno - Drak",
+        "price": 789,
+        "image": "product-img/wine holder dragon.webp"
+    },
+    {
+        "id": 63,
+        "name": "Držák na víno - Had",
+        "price": 739,
+        "image": "product-img/wine holder python.webp"
+    },
+    {
+        "id": 64,
+        "name": "Držák na skleničky",
+        "price": 599,
+        "image": "product-img/Wine holder.webp"
+    }
+]

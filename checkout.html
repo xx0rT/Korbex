@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css">
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/stmp-checkout.js"></script>
+</head>
+<body>
+                  <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+              </script>
+              <script type="text/javascript">
+                (function(){
+                    emailjs.init({
+                      publicKey: "ep4QkVKDa-6k0F14V",
+                    });
+                })();
+              </script>
+<div class="container">
+    <div class="checkoutLayout">
+        <div class="returnCart">
+            <a href="/" class="returnbtn"><i style="font-size: x-large;" class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <br><br>
+            <h1>Váš košík</h1>
+            <div class="list">
+                <div class="item">
+                    <img src="images/1.webp">
+                    <div class="info">
+                        <div class="name">Produkt 1</div>
+                        <div class="price" id="price">$22/1 Produkt</div>
+                    </div>
+                    <div class="quantity">5</div>
+                    <div class="returnPrice">$433.3</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h1>Dokončit objednávku</h1>
+            <br>
+            <div class="form">
+                <div class="group">
+                    <label for="name">Celé jméno</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="group">
+                    <label for="phone">Telefonní číslo</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+
+                <div class="group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="group">
+                    <label for="address">Adresa</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <br>
+                <div class="group">
+                    <label for="text">Požnámka k objednávce</label>
+                    <textarea name="text" id="text" placeholder="Chcete si model nechat nabarvit podle vašich představ? Rozepište se.."></textarea>
+                </div>
+                
+                <script>
+let globalOrderNumber = null;
+
+function createInvoice(returnContentOnly = false) {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var address = document.getElementById("address").value;
+    var text = document.getElementById("text").value;
+
+    var items = document.querySelectorAll('.list .item');
+    var tableData = [];
+    var totalAmount = 0;
+
+    items.forEach((item, index) => {
+        var productName = item.querySelector('.name').innerText;
+        var productPrice = parseFloat(item.querySelector('.price').innerText.replace(/[^\d.-]/g, ''));
+        var quantity = parseFloat(item.querySelector('.quantity').innerText.replace(/[^\d.-]/g, ''));
+        var totalPrice = productPrice * quantity;
+
+        tableData.push([
+            String(index + 1),
+            productName,
+            '',
+            productPrice.toFixed(2),
+            quantity.toFixed(2),
+            totalPrice.toFixed(2)
+        ]);
+
+        totalAmount += totalPrice;
+    });
+
+    tableData.push([
+        '',
+        '',
+        '',
+        '',
+        'Celkem:',
+        totalAmount.toFixed(2)
+    ]);
+
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleDateString();
+
+    if (!globalOrderNumber) {
+        globalOrderNumber = Math.floor(Math.random() * 1523552342) + 1;
+    }
+
+    var orderNumber = globalOrderNumber;
+
+    var invoiceTextContent = `
+    Faktura - Korbex\n
+    Objednávka #: ${orderNumber}\n
+    Datum: ${formattedDate}\n
+    \n
+    Jméno: ${name}\n
+    Telefon: ${phone}\n
+    Email: ${email}\n
+    Adresa: ${address}\n
+    \n
+    Produkty:\n
+    ${tableData.map(row => row.join(' | ')).join('\n')}\n
+    \n
+    Celkem: Kč${totalAmount.toFixed(2)}\n
+    \n
+    Poznámka: ${text}\n
+    \n
+    <------------------------------------------------>\n
+    `;
+
+    if (returnContentOnly) {
+        return {
+            content: invoiceTextContent,
+            orderNumber: orderNumber
+        };
+    }
+
+    var props = {
+        returnJsPDFDocObject: true,
+        fileName: "Faktura - Korbex",
+        orientationLandscape: false,
+        logo: {
+            src: "https://static.vecteezy.com/system/resources/previews/000/606/830/original/vector-letter-k-logo-design-concept-template.jpg",
+            type: 'PNG', 
+            width: 53.33,
+            height: 26.66,
+            margin: {
+                top: 0,
+                left: 0
+            }
+        },
+        stamp: {
+            inAllPages: true,
+            src: "https://raw.githubusercontent.com/edisonneza/jspdf-invoice-template/demo/images/qr_code.jpg",
+            type: 'JPG',
+            width: 20,
+            height: 20,
+            margin: {
+                top: 0,
+                left: 0
+            }
+        },
+        business: {
+            name: "Korbex",
+            address: "Pražská 28 Neratovice",
+            phone: "(+420) 704 272 290",
+            email: "korbexprint@gmail.com",
+            website: "www.korbex.com",
+        },
+        contact: {
+            label: "Faktura pro:",
+            name: name,
+            address: address,
+            phone: phone,
+            email: email,
+        },
+        invoice: {
+            label: "Faktura #: ",
+            num: orderNumber,
+            invDate: "Datum Platby: " + formattedDate,
+            invGenDate: "Datum fakturace: " + formattedDate,
+            headerBorder: false,
+            tableBodyBorder: false,
+            header: [
+                { title: "#" }, 
+                { title: "Produkt" }, 
+                { title: "Služba" }, 
+                { title: "Cena" },
+                { title: "Pocet produktu" },
+                { title: "Celkem" }
+            ],
+            table: tableData,
+            invDescLabel: "Poznámka",
+            invDesc: text,
+        },
+        footer: {
+            text: "Faktura je vytvorena na pocitaci a je platna bez podpisu a razitka. \n\nDekujeme vam za vas nakup!",
+        },
+        pageEnable: true,
+        pageLabel: "Strana ",
+    };
+
+    if (typeof jsPDFInvoiceTemplate !== 'undefined') {
+        jsPDFInvoiceTemplate.default(props);
+    } else {
+        console.error('jsPDFInvoiceTemplate library is not loaded.');
+    }
+
+    var popup = document.getElementById('checkmarkPopup');
+    popup.style.display = 'block';
+    popup.style.opacity = '1';
+    
+    setTimeout(function() {
+        popup.style.display = 'none';
+        window.location.href = '/'; 
+    }, 3000);
+}
+
+
+function Send2Dis() {
+    const invoiceData = createInvoice(true);
+    const msg = invoiceData.content;
+    const orderNumber = invoiceData.orderNumber;
+
+    const webhook = "https://discord.com/api/webhooks/1257662858888478720/Vlif8ulmK0gX2tdnkiKSBwQWXG-bVIE6ugNLH-vmeFLRxeohe0I_q8vURTKRriAtO6lf";
+    const contents = `**Nová objednávka**\n\nObjednávka #: ${orderNumber}\n\n${msg}`;
+    
+    const request = new XMLHttpRequest();
+    request.open("POST", webhook);
+    request.setRequestHeader("Content-Type", "application/json");
+    
+    const params = {
+        content: contents
+    };
+    
+    request.send(JSON.stringify(params));
+
+    createInvoice(false);
+}
+
+
+                </script>
+
+                    <style>
+                        textarea::-webkit-input-placeholder{
+                            color: white;
+                        }
+                        .returnbtn{
+                            transition: ease-in 0.15s;
+                            transform: scale(1.1);
+                            color: var(--main-color);
+                        }
+                        .returnbtn:hover{
+                            color:black;
+                        }
+                        @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                        }
+
+                        @keyframes scaleUp {
+                        from { transform: scale(0); }
+                        to { transform: scale(1); }
+                        }
+
+                        @keyframes fadeOut {
+                        from { opacity: 1; }
+                        to { opacity: 0; }
+                        }
+
+                        .checkmark-popup {
+                        display: none;
+                        position: fixed;
+                        z-index: 1000;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 20px;
+                        background-color: white;
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                        text-align: center;
+                        border-radius: 10px;
+                        opacity: 0;
+                        animation: fadeIn 0.5s forwards, fadeOut 0.5s 2.5s forwards; /* Animations for fade in and fade out */
+                        }
+
+                        .checkmark-popup-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+
+                        .checkmark {
+                        font-size: 50px;
+                        color: green;
+                        animation: scaleUp 0.5s ease-out;
+                        }
+
+                        .checkmark-popup p {
+                        margin-top: 10px;
+                        font-size: 18px;
+                        }
+                    </style>
+            </div>
+            <div class="return">
+                <div class="row">
+
+
+                    <div class="totalQuantity">70</div>
+                </div>
+                <div class="row">
+                    <div>Celkem</div>
+                    <div class="totalPrice">$900</div>
+                </div>
+            </div>
+            <button class="buttonCheckout" onclick="Send2Dis(); sendMailcheckout(); createInvoice();">Zaplatit</button>
+            </div>
+    </div>
+</div>
+
+<script src="checkout.js"></script>
+<div id="checkmarkPopup" class="checkmark-popup">
+    <div class="checkmark-popup-content">
+        <span class="checkmark">&#10003;</span>
+        <p>Děkujeme za váš nákup! <br><span style="font-size: x-small;">Následujte další instrukce ve faktuře.</span></p>
+    </div>
+</div>
+
+</body>
+</html>
