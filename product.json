@@ -223,9 +223,9 @@
     },
     {
         "id": 38,
-        "name": "Kasička na mince 4",
-        "price": 699,
-        "image": "product-img/piggy bank 4.webp"
+        "name": "Polarní Medvěd",
+        "price": 130,
+        "image": "product-img/PolarniMedved.png"
     },
     {
         "id": 39,
@@ -406,12 +406,6 @@
         "name": "Pejsek",
         "price": 150,
         "image": "product-img/pes.png"
-    },
-    {
-        "id": 69,
-        "name": "Polarní Medvěd",
-        "price": 130,
-        "image": "product-img/PolarniMedved.png"
     },
     {
         "id": 71,
