@@ -2,37 +2,37 @@
     {
         "id": 1,
         "name": "Axolot - Fialový",
-        "price": 399,
+        "price": 180,
         "image": "product-img/Baby_Split_1_b47b7f9b2d.png"
     },
     {
         "id": 2,
-        "name": "Axolot - Žlutý",
-        "price": 280,
-        "image": "product-img/axlik orange.webp"
+        "name": "Axolot - Modrý",
+        "price": 175,
+        "image": "product-img/Baby_Velvet_1_67a63e440c.png"
     },
     {
         "id": 3,
         "name": "Axolot - Oranžový",
-        "price": 409,
+        "price": 300,
         "image": "product-img/axlik orange.webp"
     },
     {
         "id": 4,
         "name": "Axolot - Červený",
-        "price": 429,
+        "price": 290,
         "image": "product-img/axlik white and red.webp"
     },
     {
         "id": 5,
-        "name": "Axolot - Zlatý",
-        "price": 419,
+        "name": "Axolot - Žlutý",
+        "price": 300,
         "image": "product-img/axlik zlto fialovy.webp"
     },
     {
         "id": 6,
         "name": "Axolot - Modrý",
-        "price": 399,
+        "price": 320,
         "image": "product-img/axlik-blue.webp"
     },
     {
@@ -43,9 +43,9 @@
     },
     {
         "id": 8,
-        "name": "Socha Big Ben",
-        "price": 399,
-        "image": "product-img/big ben socha.webp"
+        "name": "Dinosaur - Růžový",
+        "price": 150,
+        "image": "product-img/RuzovyDino.png"
     },
     {
         "id": 9,
@@ -241,9 +241,9 @@
     },
     {
         "id": 41,
-        "name": "Axolot - Modrý",
-        "price": 175,
-        "image": "product-img/Baby_Velvet_1_67a63e440c.png"
+        "name": "Rejnok",
+        "price": 380,
+        "image": "product-img/Ray_the_Manta_Ray_1_31c1fc48cb.png"
     },
     {
         "id": 42,
@@ -414,19 +414,7 @@
         "image": "product-img/PolarniMedved.png"
     },
     {
-        "id": 70,
-        "name": "Rejnok",
-        "price": 380,
-        "image": "product-img/Ray_the_Manta_Ray_1_31c1fc48cb.png"
-    },
-    {
-        "id": 70,
-        "name": "Dinosaur - Růžový",
-        "price": 150,
-        "image": "product-img/RuzovyDino.png"
-    },
-    {
-        "id": 70,
+        "id": 71,
         "name": "Dinosaur - Zelený",
         "price": 145,
         "image": "product-img/ZelenyDino.png"
