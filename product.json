@@ -6,12 +6,6 @@
         "image": "product-img/axlik fialovy.webp"
     },
     {
-        "id": 2,
-        "name": "Axolot - Zelený",
-        "price": 419,
-        "image": "product-img/axlik green.webp"
-    },
-    {
         "id": 3,
         "name": "Axolot - Oranžový",
         "price": 409,
@@ -64,12 +58,6 @@
         "name": "Držák na sluchátka",
         "price": 1599,
         "image": "product-img/chobka controler holder.webp"
-    },
-    {
-        "id": 12,
-        "name": "Držák na ovladač - voják",
-        "price": 689,
-        "image": "product-img/controler holder .webp"
     },
     {
         "id": 13,
@@ -132,22 +120,10 @@
         "image": "product-img/frog wine holder.webp"
     },
     {
-        "id": 23,
-        "name": "Držák na nože - Klaun",
-        "price": 969,
-        "image": "product-img/knife holder 2.webp"
-    },
-    {
         "id": 24,
         "name": "Držák na nože - Kraken",
         "price": 1999,
         "image": "product-img/knife holder.webp"
-    },
-    {
-        "id": 25,
-        "name": "Koloseum",
-        "price": 599,
-        "image": "product-img/koloseo socha.webp"
     },
     {
         "id": 26,
@@ -240,12 +216,6 @@
         "image": "product-img/pirat.webp"
     },
     {
-        "id": 41,
-        "name": "Box s kočkou",
-        "price": 399,
-        "image": "product-img/Planter box.webp"
-    },
-    {
         "id": 42,
         "name": "Držák na víno - Červená Panda",
         "price": 589,
@@ -264,18 +234,6 @@
         "image": "product-img/socha amor.webp"
     },
     {
-        "id": 45,
-        "name": "Brooklyn Most",
-        "price": 799,
-        "image": "product-img/socha brooklyn bridge.webp"
-    },
-    {
-        "id": 46,
-        "name": "Eifellova Věž",
-        "price": 339,
-        "image": "product-img/socha eiffel.webp"
-    },
-    {
         "id": 47,
         "name": "Socha matky a dítěte",
         "price": 249,
@@ -286,18 +244,6 @@
         "name": "Rámeček na fotku ultrazvuku",
         "price": 499,
         "image": "product-img/socha matky.webp"
-    },
-    {
-        "id": 49,
-        "name": "Sydney Opera",
-        "price": 599,
-        "image": "product-img/socha sydney opera.webp"
-    },
-    {
-        "id": 50,
-        "name": "Taj mahal",
-        "price": 599,
-        "image": "product-img/sochaa tajmahal.webp"
     },
     {
         "id": 51,
