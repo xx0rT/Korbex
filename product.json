@@ -3,7 +3,13 @@
         "id": 1,
         "name": "Axolot - Fialový",
         "price": 399,
-        "image": "product-img/axlik fialovy.webp"
+        "image": "product-img/Baby_Split_1_b47b7f9b2d.png"
+    },
+    {
+        "id": 2,
+        "name": "Axolot - Žlutý",
+        "price": 280,
+        "image": "product-img/axlik orange.webp"
     },
     {
         "id": 3,
@@ -58,6 +64,12 @@
         "name": "Držák na sluchátka",
         "price": 1599,
         "image": "product-img/chobka controler holder.webp"
+    },
+    {
+        "id": 12,
+        "name": "Lachtan",
+        "price": 120,
+        "image": "product-img/Baby_Seal_1_fe653f376d.png"
     },
     {
         "id": 13,
@@ -120,10 +132,22 @@
         "image": "product-img/frog wine holder.webp"
     },
     {
+        "id": 23,
+        "name": "Axolot - Modrý",
+        "price": 170,
+        "image": "product-img/Baby_Pop_1_8d98e61313.png"
+    },
+    {
         "id": 24,
         "name": "Držák na nože - Kraken",
         "price": 1999,
         "image": "product-img/knife holder.webp"
+    },
+        {
+        "id": 25,
+        "name": "Axolot - Růžový",
+        "price": 185,
+        "image": "product-img/Baby_Tart_1_abe9dc1f5e.png"
     },
     {
         "id": 26,
@@ -216,6 +240,12 @@
         "image": "product-img/pirat.webp"
     },
     {
+        "id": 41,
+        "name": "Axolot - Modrý",
+        "price": 175,
+        "image": "product-img/Baby_Velvet_1_67a63e440c.png"
+    },
+    {
         "id": 42,
         "name": "Držák na víno - Červená Panda",
         "price": 589,
@@ -229,9 +259,21 @@
     },
     {
         "id": 44,
+        "name": "Hrošík",
+        "price": 99,
+        "image": "product-img/hroch.png"
+    },
+    {
+        "id": 45,
         "name": "Amor Socha",
         "price": 589,
         "image": "product-img/socha amor.webp"
+    },
+    {
+        "id": 46,
+        "name": "Čínský Drak",
+        "price": 299,
+        "image": "product-img/Huo_Long_Zai_1_a5edc62585.png"
     },
     {
         "id": 47,
@@ -244,6 +286,18 @@
         "name": "Rámeček na fotku ultrazvuku",
         "price": 499,
         "image": "product-img/socha matky.webp"
+    },
+    {
+        "id": 49,
+        "name": "Klíčenka králíka",
+        "price": 99,
+        "image": "product-img/kralik.png"
+    },
+    {
+        "id": 50,
+        "name": "Dinosaur - Modrý",
+        "price": 120,
+        "image": "product-img/ModryDino.png"
     },
     {
         "id": 51,
@@ -328,5 +382,53 @@
         "name": "Držák na skleničky",
         "price": 599,
         "image": "product-img/Wine holder.webp"
+    },
+    {
+        "id": 65,
+        "name": "Los",
+        "price": 130,
+        "image": "product-img/moose.png"
+    },
+    {
+        "id": 66,
+        "name": "Dinosaur - Oranžový",
+        "price": 140,
+        "image": "product-img/OranzovyDyno.png"
+    },
+    {
+        "id": 67,
+        "name": "Tučňák",
+        "price": 140,
+        "image": "product-img/penguin.png"
+    },
+    {
+        "id": 68,
+        "name": "Pejsek",
+        "price": 150,
+        "image": "product-img/pes.png"
+    },
+    {
+        "id": 69,
+        "name": "Polarní Medvěd",
+        "price": 130,
+        "image": "product-img/PolarniMedved.png"
+    },
+    {
+        "id": 70,
+        "name": "Rejnok",
+        "price": 380,
+        "image": "product-img/Ray_the_Manta_Ray_1_31c1fc48cb.png"
+    },
+    {
+        "id": 70,
+        "name": "Dinosaur - Růžový",
+        "price": 150,
+        "image": "product-img/RuzovyDino.png"
+    },
+    {
+        "id": 70,
+        "name": "Dinosaur - Zelený",
+        "price": 145,
+        "image": "product-img/ZelenyDino.png"
     }
 ]
